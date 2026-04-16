@@ -29,12 +29,12 @@
   .hero-copy { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 24px 0 20px; }
   .hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; display: flex; align-items: center; gap: 12px; }
   .hero-eyebrow::before { content: ""; display: block; width: 32px; height: 1px; background: var(--gold); }
-  .hero-title { font-family: "Pretendard", sans-serif; font-size: clamp(50px, 5vw, 60px); font-weight: 700; color: #FDFAF5; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 14px; }
+  .hero-title { font-family: "Pretendard", sans-serif; font-size: clamp(32px, 10vw, 48px); font-weight: 700; word-break: kepp-all; color: #FDFAF5; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 14px; }
   .hero-title .period { color: var(--gold); }
-  .hero-subtitle { font-family: "Noto Serif KR", serif; font-size: clamp(14px, 1.4vw, 17px); font-weight: 300; color: rgba(253, 250, 245, 0.84); line-height: 1.8; margin-bottom: 20px; }
-  .hero-subtitle2 { font-family: "Noto Serif KR", serif; font-size: clamp(11px, 1vw, 13px); font-weight: 300; color: rgba(253, 250, 245, 0.618); line-height: 1.8; margin-bottom: 44px; }
+  .hero-subtitle { font-family: "Noto Serif KR", serif; font-size: clamp(14px, 1.4vw, 17px); font-weight: 300; color: rgba(253, 250, 245, 0.84); line-height: 1.6; margin-bottom: 20px; }
+  .hero-subtitle2 { font-family: "Noto Serif KR", serif; font-size: clamp(11px, 1vw, 13px); font-weight: 300; color: rgba(253, 250, 245, 0.618); line-height: 1.6; margin-bottom: 44px; }
   .hero-meta { display: flex; flex-direction: column; gap: 12px; }
-  .hero-meta-row { display: flex; align-items: center; gap: 14px; font-size: 13px; color: rgba(253,250,245,0.6); }
+  .hero-meta-row { display: flex; align-items: center; gap: 14px; font-size: 13px; color: rgba(253,250,245,0.8); }
   .hero-meta-row .icon { width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(166,124,42,0.4); display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
   .hero-meta-row strong { color: #FDFAF5; font-weight: 500; }
   .hero-cta { display: flex; align-items: center; gap: 16px; margin-top: 40px; }
@@ -50,7 +50,7 @@
   .hero-speaker-tag .name { font-family: "Noto Serif KR", serif; font-size: 22px; font-weight: 600; color: #FDFAF5; letter-spacing: -0.01em; }
   .hero-speaker-tag .role { font-size: 12px; color: var(--gold); letter-spacing: 0.08em; margin-top: 4px; }
 
-  .main { max-width: 760px; margin: 0 auto; padding: 72px 28px 96px; }
+  .main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
 
   .section { margin-bottom: 64px; opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s ease; }
   .section.visible { opacity: 1; transform: translateY(0); }
@@ -100,14 +100,14 @@
 
   @media (max-width: 700px) {
     .hero { grid-template-columns: 1fr; height: auto; min-height: 0; border-radius: 0; }
-    .hero-right { height: 55vw; min-height: 260px; }
+    .hero-right { height: 60vw; min-height: 240px; }
     .hero-right::after { background: linear-gradient(to top, var(--ink) 0%, transparent 50%); }
-    .hero-left { padding: 36px 24px 44px; }
+    .hero-left { padding: 32px 20px 40px; }
     .hero-speaker-tag { bottom: 18px; right: 18px; }
     .info-row { padding: 14px 18px; }
-    .seats-card { flex-direction: column; align-items: flex-start; }
+    .seats-card { flex-direction: column; align-items: flex-start; padding: 20px;}
     .seats-bar-wrap { max-width: 100%; width: 100%; }
-    .cta-box { padding: 36px 22px; }
+    .cta-box { padding: 32px 20px; }
     .speaker-card { padding: 24px 22px; }
   }
 </style>
@@ -181,9 +181,9 @@
         서울대학교 컴퓨터공학과를 졸업하고 네이버에 입사했으나,<br>
         "한 번뿐인 인생, 어떻게 살아야 잘 사는가"라는 질문에 답하기 위해 퇴사했다.<br><br>
         20년간 스터디코드를 운영하며 공부와 삶의 본질을 연구해온 그는,<br>
-        2022년 전 연령층을 위한 철학기업 라이프코드를 설립했다.<br>
-        강연 콘서트 <em>《공허의 시대》</em>는 누적 시청 310만 뷰를 기록하며<br>
-        '목적주의 탈출, 충만주의 회복'이라는 메시지를 전하고 있다.
+        2022년 전 연령층을 위한 철학과 실천을 다루는 철학기업 라이프코드를 설립했다.<br>
+        지금까지 여러 콘텐츠와 강연을 통해 '목적주의 탈출, 충만주의 회복' 이라는 메시지를 전파하고 있다.
+      
       </div>
 
       <div style="display: flex; align-items: center; gap: 10px; margin-top: 16px; flex-wrap: wrap;">
@@ -219,7 +219,7 @@
     <div class="info-card">
       <div class="info-row">
         <div class="info-icon">✨</div>
-        <div class="info-key">강연 주제</div>
+        <div class="info-key">강연 제목</div>
         <div class="info-val"><strong>사업 철학에서 인생 철학까지</strong></div>
       </div>
       <div class="info-row">
